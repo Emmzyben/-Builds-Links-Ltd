@@ -115,10 +115,11 @@ div{
     left:0;
     bottom: 0;
     right:0;
-    background-color: #01296a2c;
+    background-color: #000000b9;
     color:#fff;
     padding: 40px;
     padding-top: 5%;text-align: center;
+    
   }
   .bgcover>div>a{
     color:#000000;
@@ -177,12 +178,10 @@ border-radius: 5px;height: 320px;
     margin: 20px;
 }
 #services2>div{
-    width:15%;margin: 10px;text-align:center;text-decoration: none;background-color: #fff;color: #242424;
-height: 250px;
+    width:40%;text-align:left;text-decoration: none;color: #242424;
+padding: 20px;margin: 20px;border-bottom: 1px solid #686464;height: 140px;
 }
-#services2 img{
-    width: 100%;
-}
+
 #services2 p{font-size: 14px;}
 #services2 h3{font-size: 14px;}
 
@@ -251,7 +250,23 @@ footer a{
     color: #f8931f; /* Customize the color if needed */
   font-weight: bold;
   }
+  #container{
+    width: 60%;height: 400px;margin-bottom: 30px;
+  }
+  #talk h4{color: #F8931F;}
+  #pic{
+    width: 70%;margin: 30px;
+  }
+  #big{
+    background-color: #F4F4F4;border-top-right-radius: 100px;
+  }
 @media only screen and (max-width: 900px){
+    #pic{
+        width: 80%;margin-top: 30px;
+      }
+    #container{
+        width: 100%;height: 400px;margin: 20px;
+      }
     #links{
         text-align: left;
     }
