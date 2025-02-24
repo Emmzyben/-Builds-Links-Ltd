@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builds links limited: Building the Future,
+        One Structure at a Time</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/f0fb58e769.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="target">
+        <div>
+<img src="images/logo.png" alt="" id="img">
+        </div>
+        <div id="snddiv">
+ <ul style="font-weight: 600;">
+    <li><a href="index.html" onclick="location.reload(); return false;">Home</a>
+    </li>
+    <li><a href="#targetDiv">About Us</a></li>
+    <li><a href="#targetDiv7">Services</a></li>
+    <li><a href="#targetDiv2">Our Clients</a></li>
+    <li><a href="#targetDiv2">Contact Us</a></li>
+ </ul>
+        </div>
+    </header>
+    <div id="side">
+        <div id="underNav">
+<img src="images/logo.png" alt="">        
+        </div>
+
+        <div onclick="openNav()">
+         <div class="container" onclick="myFunction(this)" id="sideNav">
+             <div class="bar1"></div>
+             <div class="bar2"></div>
+             <div class="bar3"></div>
+           </div>
+         </div>
+       </div>
+
+       <div id="mySidenav" class="sidenav">
+        <div style="text-align: center;margin-bottom: 40px;">
+          <img src="images/logo.png" alt=""> 
+        </div>
+        <a href="index.html" onclick="location.reload(); return false;">Home</a>
+
+        <a href="#targetDiv">About Us</a>
+        <a href="#targetDiv7">Services</a>
+        <a href="#targetDiv2">Our Clients</a>
+        <a href="#targetDiv4">Contact Us</a>
+         </div>
+       
+       
+      </div>
+  
+      <div id="bg">
+        <div class="bgcover">
+           <div id="slidingDiv" class="hidden">
+          <h1>
+            Building the Future<br>
+            One Structure at a Time
+          </h1>
+          <p>
+            With over two decades of expertise in civil engineering,<br>
+            we deliver innovative, high-quality, and cost-effective construction solutions.
+          </p>
+          <br>
+          <a href="#targetDiv4">Get quote</a>
+          <a href="#targetDiv4" style="background-color: #ffffff00;border: 1px solid #fff;color: #fff;">Contact Us</a>
+           </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var slidingDiv = document.getElementById("slidingDiv");
+      
+        // Add a class to display the div and initiate the slide-out animation
+        slidingDiv.classList.remove("hidden");
+      
+        // After a short delay, reset the left property to its final position
+        setTimeout(function() {
+            slidingDiv.style.left = "0";
+        }, 10);
+      });
+      </script>
+
+    <div style="text-align: center;padding: 30px;">
+        <small><b>About Us</b></small>
+        <h4>Engineering Excellence Since 2001</h4>
+    </div>
+
+
+
+    <div id="talk">
+        <div>
+       <p>The Builds Links Ltd (TBL) is a premier civil engineering and construction firm, delivering top-tier residential, commercial, and industrial projects. Founded in 2001, we have built a solid reputation for quality, reliability, and professionalism.</p>
+    </div>
+        <div>
+         <h4>Mission</h4>
+         <p>We are committed to delivering high-quality projects on time and within budget, ensuring maximum client satisfaction.</p>
+        <h4>Vision</h4>
+        <p>To contribute to a world of sustainable and structurally sound environments.</p>
+        </div>
+    </div>
+
+
+
+    <div id="coverFooter">
+        <footer>
+          <div>
+        <div style="display: flex;flex-direction: row;">
+              <img src="images/Group 4.png" alt="" >
+          </div>
+          <p>The Builds Links Ltd (TBL) is a premier civil engineering and construction firm, delivering top-tier residential, commercial, and industrial projects. Founded in 2001, we have built a solid reputation for quality, reliability, and professionalism.</p>
+        </div>
+        
+
+        <div id="links">
+            <h3>Quick Links</h3>
+            <p><a href="">About Us</a></p>
+            <p><a href="">Services</a></p>
+            <p><a href="">Contact Us</a></p>
+        </div>
+
+        <div>
+          <h3>Contact Information</h3>
+          <p><i class="fa fa-phone" style="font-size:15px;color:#f8931f;padding-right: 10px;"></i>+23480 3342 0498 (Lagos)</p>
+          <p><i class="fa fa-phone" style="font-size:15px;color:#f8931f;padding-right: 10px;"></i>+23480 3704 2304 (Port Harcourt)</p>
+          <p><i class="fa fa-envelope" style="font-size:15px;color:#f8931f;padding-right: 10px;"></i>Email: 
+            info@thebuildlinks.com</p>
+        <p><i class="fa fa-map-marker" style=" font-size:20px;color:#f8931f;padding-right: 10px"></i>Lagos Office: 6B Fafowora Close, Magodo GRA Phase II .<br>
+            Port Harcourt Office: 11 Ohaeto Street, D-Line.</p>
+        
+         </div>
+        
+       
+         
+        
+        </footer>
+        <div style="padding: 10px;color: #ffffff;text-align: center;border-top: 1px solid black; background-color: #0376BC;">
+          <p>Copyright © 2025 The Builds Links Ltd. All Rights Reserved.</p>
+        </div>
+        </div>
+        
+        <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+        
+    <script src="script.js"></script>
+</body>
+</html>
