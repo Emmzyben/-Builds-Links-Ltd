@@ -158,3 +158,57 @@ function toggleFAQ(id) {
       behavior: "smooth"
     });
   }
+  document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    nextBtn.addEventListener("click", nextSlide);
+    prevBtn.addEventListener("click", prevSlide);
+
+    setInterval(nextSlide, 5000); // Auto-slide every 3 seconds
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const slides2 = document.querySelectorAll("#slider2 .slide2");
+  let currentIndex2 = 0;
+  const prevBtn2 = document.querySelector(".prevBtn2");
+  const nextBtn2 = document.querySelector(".nextBtn2");
+
+  function showSlide2(index) {
+      slides2.forEach((slide, i) => {
+          slide.classList.toggle("active", i === index);
+      });
+  }
+
+  function nextSlide2() {
+      currentIndex2 = (currentIndex2 + 1) % slides2.length;
+      showSlide2(currentIndex2);
+  }
+
+  function prevSlide2() {
+      currentIndex2 = (currentIndex2 - 1 + slides2.length) % slides2.length;
+      showSlide2(currentIndex2);
+  }
+
+  nextBtn2.addEventListener("click", nextSlide2);
+  prevBtn2.addEventListener("click", prevSlide2);
+
+  setInterval(nextSlide2, 7000); // Auto-slide every 3 seconds
+});
