@@ -101,14 +101,36 @@
         <div>
           <div style="background-color: #006BC4BF;padding: 20px;border-radius: 7px;">
             <h3 style="color: #fff;text-align: center;">Contact Us</h3>
-            <form action="">
-            <input type="text" name="" id="" placeholder="Full Name"><br>
-            <input type="email" name="" id="" placeholder="Email"><br>
-        <input type="text" name="" id="" placeholder="Contact Number"><br>
-        <textarea name="" id="" placeholder="Message"></textarea><br>
-        
-        <input type="submit" value="Send Message" style="background-color: #F8931F;color: #fff;">
-        </form>
+            <form onsubmit="sendEmail(event)">
+              <input type="text" id="fullName" placeholder="Full Name"><br>
+              <input type="email" id="email" placeholder="Email"><br>
+              <input type="text" id="contactNumber" placeholder="Contact Number"><br>
+              <textarea id="message" placeholder="Message"></textarea><br>
+              
+              <input type="submit" value="Send Message" style="background-color: #F8931F; color: #fff;">
+          </form>
+          
+          <script>
+          function sendEmail(event) {
+              event.preventDefault(); // Prevent form submission
+          
+              // Get form values
+              let fullName = document.getElementById("fullName").value;
+              let email = document.getElementById("email").value;
+              let contactNumber = document.getElementById("contactNumber").value;
+              let message = document.getElementById("message").value;
+          
+              // Format the mailto link
+              let subject = encodeURIComponent("Contact Form Submission from " + fullName);
+              let body = encodeURIComponent(
+                  `Full Name: ${fullName}\nEmail: ${email}\nContact Number: ${contactNumber}\n\nMessage:\n${message}`
+              );
+          
+              // Open the email client with prefilled details
+              window.location.href = `mailto:info@thebuildlinks.com?subject=${subject}&body=${body}`;
+          }
+          </script>
+          
           </div>
         
         </div>
